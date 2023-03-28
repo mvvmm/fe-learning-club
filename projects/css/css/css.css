@@ -1,0 +1,78 @@
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+#home #my-fav-emojis ol {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+
+#home #my-fav-emojis ol li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: MistyRose;
+  border-radius: 1rem;
+  font-size: 5rem;
+}
+
+#home #my-fav-emojis ol li:hover {
+  background-color: paleturquoise;
+  cursor: pointer;
+}
+
+#home #my-fav-emojis ol li a {
+  text-decoration: none;
+}
+
+body.page a.home-button {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  background-color: seashell;
+  border-radius: 1rem;
+}
+
+body.page h2.emoji-title {
+  font-size: 10rem;
+  margin: 0;
+  background-color: aquamarine;
+  width: min-content;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+body.page .description p {
+  background-color: lavender;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+body.page .thoughts > div {
+  background-color: pink;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+body.page[data-emoji="otter"] .thoughts > div {
+  background-color: cornflowerblue;
+}
+
+@media only screen and (min-width: 640px) {
+  #home #my-fav-emojis ol li {
+    width: 200px;
+    height: 200px;
+  }
+}
